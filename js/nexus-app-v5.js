@@ -1,11 +1,11 @@
 /*
-  SHOWCASE LIGHTBOX BUILD // 5.2.3
+  SHOWCASE LIGHTBOX BUILD // 5.2.4
 
   DEMO COMPETITIVE DATA
   Team names, rankings, colors, emblems, NEMESIS names, and base mech models are
   canon. Replace the clearly marked image paths and demo statistics as assets arrive.
 */
-const NEXUS_APP_VERSION = "5.2.3";
+const NEXUS_APP_VERSION = "5.2.4";
 const SITE_ROUTES = new Set(["home", "competitive", "mechs", "store"]);
 
 document.documentElement.dataset.nexusAppVersion = NEXUS_APP_VERSION;
@@ -86,27 +86,27 @@ Demanding, immersive, and never shallow. Log in. The arena is waiting. So is eve
     },
     items: [
       { key: "bundle-1", name: "TAIGA", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#ff9d45", image: "assets/mechs/taiga.png" },
-      { key: "bundle-2", name: "REIKO", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/mechs/reiko.png" },
+      { key: "bundle-2", name: "FRAME BUNDLE 02", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/mechs/frame-bundle-02.png" },
       { key: "bundle-3", name: "MIDAS", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#d0a34d", image: "assets/mechs/midas.png" },
-      { key: "bundle-4", name: "LIBERTAS", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/mechs/libertas.png" },
-      { key: "bundle-5", name: "QINGHUA", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/mechs/qinghua.png" },
-      { key: "bundle-6", name: "VESPERA-7", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#aeb6bf", image: "assets/mechs/vesper.png" },
+      { key: "bundle-4", name: "FRAME BUNDLE 04", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/mechs/frame-bundle-04.png" },
+      { key: "bundle-5", name: "CHROMA", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/mechs/chroma.png" },
+      { key: "bundle-6", name: "FRAME BUNDLE 06", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#aeb6bf", image: "assets/mechs/frame-bundle-06.png" },
       { key: "bundle-7", name: "RUST", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#c46f46", image: "assets/mechs/rust.png" },
-      { key: "bundle-8", name: "BLOATED REVERENCE", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#67a5bc", image: "assets/mechs/bloated.png" },
-      { key: "bundle-9", name: "CHROMA", type: "FRAME BUNDLE", price: "10,000 NX", tier: "TIER // APEX", accent: "#9b6cff", image: "assets/mechs/chroma.png" },
-      { key: "bundle-10", name: "FRIDGE", type: "FRAME BUNDLE", price: "10,000 NX", tier: "TIER // APEX", accent: "#bcff4a", image: "assets/mechs/fridge.png" }
+      { key: "bundle-8", name: "FRAME BUNDLE 08", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#67a5bc", image: "assets/mechs/frame-bundle-08.png" },
+      { key: "bundle-9", name: "FRAME BUNDLE 09", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/mechs/frame-bundle-09.png" },
+      { key: "bundle-10", name: "FRAME BUNDLE 10", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#bcff4a", image: "assets/mechs/frame-bundle-10.png" }
     ],
     titles: [
-      { key: "title-1", name: "Hazard", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#bcff4a", image: "assets/titles/hazard.png" },
-      { key: "title-2", name: "Eternal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/titles/eternal.png" },
-      { key: "title-3", name: "Void", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/titles/void.png" },
-      { key: "title-4", name: "Apex", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/titles/apex.png" },
-      { key: "title-5", name: "Royal Flush", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#f1843f", image: "assets/titles/Royal Flush.png" },
-      { key: "title-6", name: "You Died", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#aeb6bf", image: "assets/titles/You Died.png" },
-      { key: "title-7", name: "Zero", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d6eb35", image: "assets/titles/zero.png" },
-      { key: "title-8", name: "Immortal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#438dce", image: "assets/titles/immortal.png" },
-      { key: "title-9", name: "Divine", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#52e0bd", image: "assets/titles/divine.png" },
-      { key: "title-10", name: "Paragon", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d0a34d", image: "assets/titles/paragon.png" }
+      { key: "title-1", name: "Hazard", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#bcff4a", image: "assets/titles/hazard.png", imageFallbacks: ["assets/titles/Hazard.png"] },
+      { key: "title-2", name: "Eternal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/titles/eternal.png", imageFallbacks: ["assets/titles/Eternal.png"] },
+      { key: "title-3", name: "Void", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/titles/void.png", imageFallbacks: ["assets/titles/Void.png"] },
+      { key: "title-4", name: "Apex", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/titles/apex.png", imageFallbacks: ["assets/titles/Apex.png"] },
+      { key: "title-5", name: "Royal Flush", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#f1843f", image: "assets/titles/royal flush.png", imageFallbacks: ["assets/titles/Royal Flush.png", "assets/titles/royal-flush.png"] },
+      { key: "title-6", name: "You Died", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#aeb6bf", image: "assets/titles/you died.png", imageFallbacks: ["assets/titles/You Died.png", "assets/titles/you-died.png"] },
+      { key: "title-7", name: "Zero", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d6eb35", image: "assets/titles/zero.png", imageFallbacks: ["assets/titles/Zero.png"] },
+      { key: "title-8", name: "Immortal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#438dce", image: "assets/titles/immortal.png", imageFallbacks: ["assets/titles/Immortal.png"] },
+      { key: "title-9", name: "Divine", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#52e0bd", image: "assets/titles/divine.png", imageFallbacks: ["assets/titles/Divine.png"] },
+      { key: "title-10", name: "Paragon", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d0a34d", image: "assets/titles/paragon.png", imageFallbacks: ["assets/titles/Paragon.png"] }
     ]
   }
 };
@@ -280,8 +280,26 @@ function renderMechs() {
 
 function storeImageState(container) {
   const image = container.querySelector("img");
-  image.addEventListener("load", () => container.classList.add("has-image"));
-  image.addEventListener("error", () => container.classList.remove("has-image"));
+  const fallbackSources = (image.dataset.imageFallbacks || "").split("||").filter(Boolean);
+  let fallbackIndex = 0;
+
+  image.addEventListener("load", () => {
+    container.classList.add("has-image");
+
+    const key = container.closest("article")?.querySelector(".store-open")?.dataset.cosmeticKey;
+    const item = key ? findCosmetic(key) : null;
+    if (item) item.image = image.getAttribute("src");
+  });
+
+  image.addEventListener("error", () => {
+    if (fallbackIndex < fallbackSources.length) {
+      image.src = fallbackSources[fallbackIndex];
+      fallbackIndex += 1;
+      return;
+    }
+
+    container.classList.remove("has-image");
+  });
   if (image.complete && image.naturalWidth) container.classList.add("has-image");
 }
 
@@ -336,7 +354,7 @@ function renderStore() {
         <span class="sr-only">Enlarge ${item.name}</span>
       </button>
       <div class="store-media">
-        <img src="${item.image}" alt="${item.name} banner cosmetic" loading="lazy">
+        <img src="${item.image}" data-image-fallbacks="${(item.imageFallbacks || []).join("||")}" alt="${item.name} banner cosmetic" loading="lazy">
         <div class="store-placeholder" aria-hidden="true">
           <strong>${String(index + 1).padStart(2, "0")}</strong>
           <span>DROP PLAYER TITLE IMAGE AT</span>
