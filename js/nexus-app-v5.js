@@ -97,16 +97,16 @@ Demanding, immersive, and never shallow. Log in. The arena is waiting. So is eve
       { key: "bundle-10", name: "FRIDGE", type: "FRAME BUNDLE", price: "10,000 NX", tier: "TIER // APEX", accent: "#bcff4a", image: "assets/mechs/fridge.png" }
     ],
     titles: [
-      { key: "title-1", name: "Hazard", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#bcff4a", image: "assets/titles/Hazard.png" },
-      { key: "title-2", name: "Eternal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/titles/Eternal.png" },
-      { key: "title-3", name: "Void", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/titles/Void.png" },
-      { key: "title-4", name: "Apex", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/titles/Apex.png" },
+      { key: "title-1", name: "Hazard", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#bcff4a", image: "assets/titles/hazard.png" },
+      { key: "title-2", name: "Eternal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/titles/eternal.png" },
+      { key: "title-3", name: "Void", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/titles/void.png" },
+      { key: "title-4", name: "Apex", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/titles/apex.png" },
       { key: "title-5", name: "Royal Flush", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#f1843f", image: "assets/titles/Royal Flush.png" },
       { key: "title-6", name: "You Died", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#aeb6bf", image: "assets/titles/You Died.png" },
-      { key: "title-7", name: "Zero", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d6eb35", image: "assets/titles/Zero.png" },
-      { key: "title-8", name: "Immortal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#438dce", image: "assets/titles/Immortal.png" },
-      { key: "title-9", name: "Divine", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#52e0bd", image: "assets/titles/Divine.png" },
-      { key: "title-10", name: "Paragon", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d0a34d", image: "assets/titles/Paragon.png" }
+      { key: "title-7", name: "Zero", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d6eb35", image: "assets/titles/zero.png" },
+      { key: "title-8", name: "Immortal", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#438dce", image: "assets/titles/immortal.png" },
+      { key: "title-9", name: "Divine", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#52e0bd", image: "assets/titles/divine.png" },
+      { key: "title-10", name: "Paragon", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#d0a34d", image: "assets/titles/paragon.png" }
     ]
   }
 };
