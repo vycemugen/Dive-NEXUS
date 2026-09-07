@@ -86,15 +86,15 @@ Demanding, immersive, and never shallow. Log in. The arena is waiting. So is eve
     },
     items: [
       { key: "bundle-1", name: "TAIGA", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#ff9d45", image: "assets/mechs/taiga.png" },
-      { key: "bundle-2", name: "FRAME BUNDLE 02", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/mechs/frame-bundle-02.png" },
+      { key: "bundle-2", name: "REIKO", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#66f2ff", image: "assets/mechs/reiko.png" },
       { key: "bundle-3", name: "MIDAS", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#d0a34d", image: "assets/mechs/midas.png" },
-      { key: "bundle-4", name: "FRAME BUNDLE 04", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/mechs/frame-bundle-04.png" },
-      { key: "bundle-5", name: "CHROMA", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/mechs/chroma.png" },
-      { key: "bundle-6", name: "FRAME BUNDLE 06", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#aeb6bf", image: "assets/mechs/frame-bundle-06.png" },
+      { key: "bundle-4", name: "LIBERTAS", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#ff4a45", image: "assets/mechs/libertas.png" },
+      { key: "bundle-5", name: "QINGHUA", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/mechs/qinghua.png" },
+      { key: "bundle-6", name: "VESPERA-7", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#aeb6bf", image: "assets/mechs/vesper.png" },
       { key: "bundle-7", name: "RUST", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#c46f46", image: "assets/mechs/rust.png" },
-      { key: "bundle-8", name: "FRAME BUNDLE 08", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#67a5bc", image: "assets/mechs/frame-bundle-08.png" },
-      { key: "bundle-9", name: "FRAME BUNDLE 09", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#9b6cff", image: "assets/mechs/frame-bundle-09.png" },
-      { key: "bundle-10", name: "FRAME BUNDLE 10", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#bcff4a", image: "assets/mechs/frame-bundle-10.png" }
+      { key: "bundle-8", name: "BLOATED REVERENCE", type: "FRAME BUNDLE", price: "15,000 NX", tier: "TIER // NEXUS", accent: "#67a5bc", image: "assets/mechs/bloated.png" },
+      { key: "bundle-9", name: "CHROMA", type: "FRAME BUNDLE", price: "10,000 NX", tier: "TIER // APEX", accent: "#9b6cff", image: "assets/mechs/chroma.png" },
+      { key: "bundle-10", name: "FRIDGE", type: "FRAME BUNDLE", price: "10,000 NX", tier: "TIER // APEX", accent: "#bcff4a", image: "assets/mechs/fridge.png" }
     ],
     titles: [
       { key: "title-1", name: "Hazard", type: "PLAYER TITLE", price: "3,000 NX", tier: "TIER // NEXUS", accent: "#bcff4a", image: "assets/titles/hazard.png", imageFallbacks: ["assets/titles/Hazard.png"] },
