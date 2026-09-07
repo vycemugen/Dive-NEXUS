@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05080c">
+  <meta name="description" content="Enter DIVE, build your Frame, and compete in the full-dive world of NEXUS.">
+  <title>NEXUS // DIVE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/nexus-app-v5.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <audio id="site-music" src="assets/music/theme.mp3" loop preload="none"></audio>
+
+  <header class="site-header">
+    <button class="brand route-trigger" type="button" data-route="home" aria-label="NEXUS home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="brand-copy">
+        <strong>NEXUS</strong>
+        <small>FULL-DIVE NETWORK</small>
+      </span>
+    </button>
+
+    <div class="support-links" aria-label="Help and contact links">
+      <a href="https://discord.gg/cH9STvgwjV" target="_blank" rel="noopener noreferrer">FAQ</a>
+      <a href="https://discord.gg/cH9STvgwjV" target="_blank" rel="noopener noreferrer">CONTACT US</a>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <button class="nav-link route-trigger is-active" type="button" data-route="home" aria-current="page">HOME</button>
+      <button class="nav-link route-trigger" type="button" data-route="competitive">COMPETITIVE</button>
+      <button class="nav-link route-trigger" type="button" data-route="mechs">MECHS</button>
+      <button class="nav-link route-trigger" type="button" data-route="store">STORE</button>
+    </nav>
+
+    <div class="header-tools">
+      <span class="network-status"><i aria-hidden="true"></i>DIVE NETWORK // ONLINE</span>
+      <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Play site music">
+        <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span id="music-label">AUDIO // OFF</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="route-view is-active" id="home-view" data-view="home" aria-labelledby="hero-title">
+      <div class="hero">
+        <img class="hero-art" src="assets/images/nexus-keyart.png" alt="An advanced combat Frame overlooking a vast virtual arena">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-scanlines" aria-hidden="true"></div>
+
+        <div class="hero-content shell">
+          <div class="hero-copy-block">
+            <p class="eyebrow"><span>FULL-DIVE MECH COMBAT</span><b>LINK STATUS // READY</b></p>
+            <h1 id="hero-title">DIVE IN.<br><span>BUILD YOUR FRAME.</span></h1>
+            <p class="hero-copy">Enter a full-dive world where NEXUS is the ultimate competitive mech game. Build your Frame, fight your way up, meet players across the world—or live beyond the arena entirely on your own terms.</p>
+            <div class="hero-actions">
+              <button class="primary-cta route-trigger" type="button" data-route="competitive">
+                ENTER COMPETITIVE
+                <span aria-hidden="true">↗</span>
+              </button>
+              <span class="hero-note">NO CHOSEN PATH.<br>NO GUARANTEED VICTORY.</span>
+            </div>
+          </div>
+
+          <figure class="hero-trailer">
+            <div class="hero-trailer-header">
+              <span>OFFICIAL TRAILER</span>
+              <b>MEDIA // 01</b>
+            </div>
+            <video id="hero-trailer" controls playsinline preload="metadata" poster="assets/images/nexus-keyart.png">
+              <source src="assets/video/trailer.mp4" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+            <figcaption>ENTER THE NEXUS // FULL-DIVE TRANSMISSION</figcaption>
+          </figure>
+        </div>
+
+        <aside class="hero-telemetry" aria-label="NEXUS connection status">
+          <span class="telemetry-label">POD TELEMETRY</span>
+          <div><b>01</b><span>NEURAL LINK<br>STABLE</span></div>
+          <div><b>02</b><span>FRAME SYNC<br>AWAITING PILOT</span></div>
+          <div><b>03</b><span>WORLD STATUS<br>OPEN</span></div>
+        </aside>
+
+        <div class="mode-strip" aria-label="Available game modes">
+          <span>CHOOSE YOUR ENGAGEMENT</span>
+          <ul>
+            <li>CASUAL</li>
+            <li>RANKED</li>
+            <li>NEMESIS</li>
+            <li>TEAM COMPETITION</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="world-intro shell" aria-labelledby="world-title">
+        <div class="section-index">01 // THE WORLD</div>
+        <div>
+          <p class="eyebrow">BEYOND THE ARENA</p>
+          <h2 id="world-title">THERE IS NO CHOSEN PATH.</h2>
+        </div>
+        <p>Log in. Compete. Make connections. Disappear into the crowd. NEXUS gives you a world; what you become inside it is entirely up to you.</p>
+      </section>
+    </section>
+
+    <section class="route-view competitive-view" id="competitive-view" data-view="competitive" aria-labelledby="competitive-title" hidden>
+      <header class="competitive-hero">
+        <div class="shell competitive-heading">
+          <p class="eyebrow">NEXUS OFFICIAL CIRCUIT</p>
+          <h1 id="competitive-title">COMPETITIVE</h1>
+          <p>Teams fight for the board. Pilots enter NEMESIS to fight for survival.</p>
+        </div>
+        <div class="season-stamp" aria-label="Current data status">
+          <small>DATA FEED</small>
+          <strong>PREVIOUS SEASON</strong>
+          <span>CANON ROSTER // DEMO SCORES</span>
+        </div>
+      </header>
+
+      <div class="competitive-body shell">
+        <div class="section-tabs" role="tablist" aria-label="Competitive sections">
+          <button id="teams-tab" class="section-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="teams-panel" data-panel="teams">
+            <span>01</span> MEET THE PRO TEAMS
+          </button>
+          <button id="nemesis-tab" class="section-tab" type="button" role="tab" aria-selected="false" aria-controls="nemesis-panel" data-panel="nemesis" tabindex="-1">
+            <span>02</span> TOP 3 NEMESIS
+          </button>
+        </div>
+
+        <section class="competitive-panel is-active" id="teams-panel" role="tabpanel" aria-labelledby="teams-tab">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">PRO CIRCUIT // REGISTERED SQUADS</p>
+              <h2>MEET THE TEAMS</h2>
+            </div>
+            <p>Five crews. One season. Every point on the board was paid for in armor, nerve, and hard decisions.</p>
+          </div>
+
+          <div class="team-grid" id="team-grid" aria-live="polite"></div>
+
+          <section class="standings-panel" aria-labelledby="standings-title">
+            <div class="standings-copy">
+              <p class="eyebrow">ARCHIVED RESULTS</p>
+              <h2 id="standings-title">PREVIOUS SEASON STANDINGS</h2>
+              <p>Final circuit points after all team events. Edit the demo values once the official roster lands.</p>
+              <div class="standings-key">
+                <span><i></i>CIRCUIT POINTS</span>
+                <span>SEASON COMPLETE</span>
+              </div>
+            </div>
+            <div class="standings-chart" id="standings-chart" aria-label="Bar chart of previous season team standings"></div>
+          </section>
+        </section>
+
+        <section class="competitive-panel" id="nemesis-panel" role="tabpanel" aria-labelledby="nemesis-tab" hidden>
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">NEMESIS // CURRENT ELITE</p>
+              <h2>TOP 3 PILOTS</h2>
+            </div>
+            <p>No first. No second. No third. These are the three pilots who currently define the highest tier of NEMESIS.</p>
+          </div>
+          <div class="nemesis-grid" id="nemesis-grid" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="route-view mechs-view" id="mechs-view" data-view="mechs" aria-labelledby="mechs-title" hidden>
+      <header class="competitive-hero mechs-hero">
+        <div class="shell competitive-heading">
+          <p class="eyebrow">NEXUS // BASE FRAME ARCHIVE</p>
+          <h1 id="mechs-title">MECHS</h1>
+          <p>Six base models. Six battlefield roles. Every Frame begins here—everything after that belongs to its pilot.</p>
+        </div>
+        <div class="season-stamp" aria-label="Frame archive status">
+          <small>FRAME DATABASE</small>
+          <strong>BASE MODELS // 06</strong>
+          <span>IMAGE SLOTS // READY</span>
+        </div>
+      </header>
+
+      <div class="mech-body shell">
+        <div class="panel-heading mech-heading">
+          <div>
+            <p class="eyebrow">SELECT YOUR FOUNDATION</p>
+            <h2>CHOOSE A FRAME</h2>
+          </div>
+          <p>Hover or focus on a model to bring its combat role forward. Final model artwork can be dropped into the prepared image paths.</p>
+        </div>
+        <div class="mech-grid" id="mech-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="route-view store-view" id="store-view" data-view="store" aria-labelledby="store-title" hidden>
+      <header class="competitive-hero store-hero">
+        <div class="shell competitive-heading">
+          <p class="eyebrow">NEXUS // COSMETIC MARKET</p>
+          <div class="store-title-row">
+            <h1 id="store-title">STORE</h1>
+            <button class="buy-nx-button" id="buy-nx-button" type="button">BUY NX <span aria-hidden="true">+</span></button>
+          </div>
+          <p>Frame cosmetics, limited collaborations, and pilot-selected designs built for the world beyond the arena.</p>
+        </div>
+        <div class="season-stamp" aria-label="Store rotation status">
+          <small>FEATURED ROTATION</small>
+          <strong>COLLAB // LIVE</strong>
+          <span>STORE ITEMS // 21</span>
+        </div>
+      </header>
+
+      <div class="store-body shell">
+        <div class="section-tabs store-tabs" role="tablist" aria-label="Store sections">
+          <button id="frame-bundles-tab" class="section-tab store-section-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="frame-bundles-panel" data-store-panel="frame-bundles">
+            <span>01</span> FRAME BUNDLES
+          </button>
+          <button id="player-titles-tab" class="section-tab store-section-tab" type="button" role="tab" aria-selected="false" aria-controls="player-titles-panel" data-store-panel="player-titles" tabindex="-1">
+            <span>02</span> PLAYER TITLES
+          </button>
+        </div>
+
+        <section class="store-panel is-active" id="frame-bundles-panel" role="tabpanel" aria-labelledby="frame-bundles-tab">
+          <div class="panel-heading store-heading">
+            <div>
+              <p class="eyebrow">CURRENT ROTATION</p>
+              <h2>FRAME BUNDLES</h2>
+            </div>
+            <p>Featured collaboration gear and ten Frame cosmetic bundles. Select any item to inspect its artwork at full size.</p>
+          </div>
+          <div id="store-feature"></div>
+          <div class="store-grid" id="store-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="store-panel" id="player-titles-panel" role="tabpanel" aria-labelledby="player-titles-tab" hidden>
+          <div class="panel-heading store-heading">
+            <div>
+              <p class="eyebrow">IDENTITY // DISPLAY LAYER</p>
+              <h2>PLAYER TITLES</h2>
+            </div>
+            <p>Ten banner-style title slots are prepared while the first title collection is being finalized.</p>
+          </div>
+          <div class="title-grid" id="title-grid" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="team-modal" id="team-modal" hidden>
+    <button class="team-modal-backdrop" type="button" data-modal-close tabindex="-1" aria-label="Close team gallery"></button>
+    <section class="team-dialog" role="dialog" aria-modal="true" aria-labelledby="team-modal-title">
+      <button class="team-modal-close" type="button" data-modal-close aria-label="Close team gallery">×</button>
+      <div class="team-modal-media" id="team-modal-media">
+        <img id="team-modal-image" alt="">
+        <div class="image-placeholder" id="team-modal-placeholder">
+          <span>TEAM IMAGE SLOT</span>
+          <code id="team-modal-path"></code>
+        </div>
+      </div>
+      <div class="team-modal-copy">
+        <img class="team-modal-emblem" id="team-modal-emblem" src="" alt="">
+        <p class="eyebrow" id="team-modal-rank"></p>
+        <h2 id="team-modal-title"></h2>
+        <p id="team-modal-tag"></p>
+        <span>PRO CIRCUIT // TEAM ARCHIVE</span>
+      </div>
+    </section>
+  </div>
+
+  <div class="team-modal pilot-modal" id="pilot-modal" hidden>
+    <button class="team-modal-backdrop" type="button" data-pilot-modal-close tabindex="-1" aria-label="Close NEMESIS pilot profile"></button>
+    <section class="team-dialog pilot-dialog" role="dialog" aria-modal="true" aria-labelledby="pilot-modal-title">
+      <button class="team-modal-close pilot-modal-close" type="button" data-pilot-modal-close aria-label="Close NEMESIS pilot profile">×</button>
+      <div class="team-modal-media pilot-modal-media" id="pilot-modal-media">
+        <img id="pilot-modal-image" alt="">
+        <div class="image-placeholder" id="pilot-modal-placeholder">
+          <span>NEMESIS PROFILE IMAGE</span>
+          <code id="pilot-modal-path"></code>
+        </div>
+      </div>
+      <div class="team-modal-copy pilot-modal-copy">
+        <div class="pilot-modal-mark" aria-hidden="true">N</div>
+        <p class="eyebrow">TOP 3 // NEMESIS</p>
+        <h2 id="pilot-modal-title"></h2>
+        <blockquote id="pilot-modal-quote"></blockquote>
+        <span>THREAT LEVEL // APEX</span>
+      </div>
+    </section>
+  </div>
+
+  <div class="team-modal cosmetic-modal" id="cosmetic-modal" hidden>
+    <button class="team-modal-backdrop" type="button" data-cosmetic-modal-close tabindex="-1" aria-label="Close cosmetic preview"></button>
+    <section class="team-dialog cosmetic-dialog" role="dialog" aria-modal="true" aria-labelledby="cosmetic-modal-title">
+      <button class="team-modal-close cosmetic-modal-close" type="button" data-cosmetic-modal-close aria-label="Close cosmetic preview">×</button>
+      <div class="team-modal-media cosmetic-modal-media" id="cosmetic-modal-media">
+        <img id="cosmetic-modal-image" alt="">
+        <div class="cosmetic-featured-gallery" id="cosmetic-featured-gallery" hidden></div>
+        <div class="image-placeholder" id="cosmetic-modal-placeholder">
+          <span>COSMETIC IMAGE</span>
+          <code id="cosmetic-modal-path"></code>
+        </div>
+      </div>
+      <div class="team-modal-copy cosmetic-modal-copy">
+        <div class="cosmetic-modal-mark" aria-hidden="true">NX</div>
+        <p class="eyebrow" id="cosmetic-modal-type"></p>
+        <h2 id="cosmetic-modal-title"></h2>
+        <p class="cosmetic-modal-price" id="cosmetic-modal-price"></p>
+        <span id="cosmetic-modal-tier"></span>
+        <blockquote class="cosmetic-review" id="cosmetic-review" hidden>
+          <small id="cosmetic-review-label"></small>
+          <p id="cosmetic-review-quote"></p>
+          <footer>
+            <strong id="cosmetic-review-author"></strong>
+            <span id="cosmetic-review-handle"></span>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+  </div>
+
+  <div class="cosmetic-image-modal" id="cosmetic-image-modal" hidden>
+    <button class="team-modal-backdrop" type="button" data-cosmetic-image-close tabindex="-1" aria-label="Close full-screen cosmetic image"></button>
+    <section class="cosmetic-image-dialog" role="dialog" aria-modal="true" aria-labelledby="cosmetic-image-modal-title">
+      <button class="team-modal-close cosmetic-image-modal-close" type="button" data-cosmetic-image-close aria-label="Close full-screen cosmetic image">×</button>
+      <div class="cosmetic-image-modal-media" id="cosmetic-image-modal-media">
+        <img id="cosmetic-image-modal-image" alt="">
+        <div class="image-placeholder" id="cosmetic-image-modal-placeholder">
+          <span>FULL-SCREEN SHOWCASE IMAGE</span>
+          <code id="cosmetic-image-modal-path"></code>
+        </div>
+      </div>
+      <footer class="cosmetic-image-modal-caption">
+        <p class="eyebrow" id="cosmetic-image-modal-count"></p>
+        <h2 id="cosmetic-image-modal-title"></h2>
+        <span>CLICK OUTSIDE OR PRESS ESC TO CLOSE</span>
+      </footer>
+    </section>
+  </div>
+
+  <div class="team-modal nx-modal" id="nx-modal" hidden>
+    <button class="team-modal-backdrop" type="button" data-nx-modal-close tabindex="-1" aria-label="Close NEXANS purchase options"></button>
+    <section class="nx-dialog" role="dialog" aria-modal="true" aria-labelledby="nx-modal-title">
+      <button class="team-modal-close nx-modal-close" type="button" data-nx-modal-close aria-label="Close NEXANS purchase options">×</button>
+      <header class="nx-dialog-heading">
+        <p class="eyebrow">NEXUS CURRENCY EXCHANGE</p>
+        <h2 id="nx-modal-title">BUY NEXANS</h2>
+        <p>Select an NX pack to continue to the purchase page.</p>
+      </header>
+      <div class="nx-options" id="nx-options"></div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>NEXUS // FULL-DIVE NETWORK</span>
+      <span>FICTIONAL GAME WORLD</span>
+      <span>© <b id="current-year"></b> NEXUS</span>
+    </div>
+  </footer>
+
+  <a class="creator-watermark" href="https://ooc.ai/profile/sQa3v6h1UG-GGENI3ZAfXYVlVGC0P-_?profileTab=work" target="_blank" rel="noopener noreferrer" aria-label="Visit site creator VYCEMUGEN's profile">
+    <span>SITE CREATOR</span><strong>//VYCEMUGEN</strong>
+  </a>
+
+  <noscript><p class="noscript">NEXUS requires JavaScript to load competitive data and navigation.</p></noscript>
+</body>
+</html>
+
