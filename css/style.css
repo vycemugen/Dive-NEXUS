@@ -85,12 +85,17 @@ button:focus-visible, a:focus-visible {
   top: 0;
   height: var(--header-height);
   display: grid;
-  grid-template-columns: auto auto 1fr auto;
+  grid-template-columns: minmax(350px, 1fr) auto minmax(230px, 1fr);
   align-items: stretch;
   border-bottom: 1px solid rgba(102, 242, 255, 0.24);
   background: rgba(4, 8, 12, 0.88);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(18px);
+}
+
+.header-brand-group {
+  display: flex;
+  min-width: 350px;
 }
 
 .brand {
@@ -160,6 +165,7 @@ button:focus-visible, a:focus-visible {
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: 0.09em;
+  white-space: nowrap;
   text-decoration: none;
   transition: color 160ms ease, transform 160ms ease;
 }
@@ -1243,7 +1249,7 @@ body.modal-open { overflow: hidden; }
 
 @media (max-width: 1120px) {
   :root { --shell: min(100% - 48px, 1200px); }
-  .site-header { grid-template-columns: auto auto 1fr auto; }
+  .site-header { grid-template-columns: auto 1fr auto; }
   .network-status { display: none; }
   .primary-nav { justify-content: center; }
   .nav-link { min-width: 128px; padding-inline: 18px; }
@@ -1262,11 +1268,12 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 760px) {
   :root { --shell: calc(100% - 32px); --header-height: 66px; }
   body { padding-bottom: 62px; }
-  .site-header { grid-template-columns: 1fr auto auto; }
-  .brand { min-width: 0; padding: 0 16px; border-right: 0; }
+  .site-header { grid-template-columns: 1fr auto; }
+  .header-brand-group { min-width: 0; }
+  .brand { flex: 1 1 auto; min-width: 0; padding: 0 14px; border-right: 0; }
   .brand-copy small { display: none; }
   .support-links { min-width: 0; gap: 4px; padding: 0 10px; border-left: 1px solid var(--line); }
-  .support-links a { font-size: 0.58rem; letter-spacing: 0.05em; }
+  .support-links a { font-size: 0.68rem; letter-spacing: 0.05em; }
   .primary-nav {
     position: fixed;
     z-index: 60;
@@ -1280,7 +1287,8 @@ body.modal-open { overflow: hidden; }
   }
   .nav-link { flex: 1; min-width: 0; padding: 0 6px; font-size: 0.64rem; letter-spacing: 0.05em; }
   .nav-link::after { right: 12px; left: 12px; }
-  .music-toggle { min-width: 0; padding: 0 16px; }
+  .music-toggle { min-width: 50px; justify-content: center; padding: 0 14px; }
+  .music-toggle #music-label { display: none; }
   .hero { min-height: calc(100svh - var(--header-height)); align-items: end; }
   .hero-art { object-position: 66% center; }
   .hero-shade { background: linear-gradient(0deg, rgba(3,6,10,0.98) 0%, rgba(3,6,10,0.76) 52%, rgba(3,6,10,0.18) 100%); }
